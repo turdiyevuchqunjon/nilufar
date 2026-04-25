@@ -15,10 +15,10 @@ import { ContactForm } from '@/components/contact-form';
 const siteData = {
   doctorName: "Professor Nilufar Xushvakova",
   fullName: "Professor Khushvakova Nilufar Jurakulovna",
-  titles: "Doctor of Medical Sciences • Professor • Doctor of the highest category Founder of the SAOMED clinic and the GENMEDICAL innovative laboratory",
+  titles: "Tibbiyot fanlari doktori • Professor • Oliy toifali shifokor. SAOMED klinikasi va GENMEDICAL innovatsion laboratoriyasi asoschisi.",
   bullets: [
-    "More than 29 years of experience in the field of otolaryngology",
-    "One of the leading specialists in Uzbekistan and Central Asia",
+    "Otolaringologiya sohasida 29 yildan ortiq tajriba",
+"O'zbekiston va Markaziy Osiyodagi yetakchi mutaxassislardan biri",
   ],
   summary: "O'zbekiston va Markaziy Osiyodagi yetakchi otolaringologlardan biri. 29 yildan ortiq tajriba, 582 dan ortiq ilmiy ishlar va zamonaviy LOR jarrohligi bo'yicha ekspert.",
   stats: [
@@ -161,14 +161,10 @@ export default function PortfolioPage() {
 
             {/* Navigatsiya */}
             <nav className="hidden items-center gap-10 text-[15px] font-normal text-slate-700 md:flex">
-              <Link href="#top" className="transition-colors hover:text-[#3A6B62]">Home</Link>
-              <Link href="#about" className="transition-colors hover:text-[#3A6B62]">About me</Link>
-              <Link href="#achievements" className="transition-colors hover:text-[#3A6B62]">Certificates</Link>
-              <button className="flex items-center gap-1.5 transition-colors hover:text-[#3A6B62]">
-                <span className="text-base">🇺🇿</span>
-                <span>Uzbek</span>
-                <ChevronDown className="h-3.5 w-3.5" />
-              </button>
+              <Link href="#about" className="transition-colors hover:text-[#3A6B62]">Men haqimda</Link>
+              <Link href="#achievements" className="transition-colors hover:text-[#3A6B62]">Natijalarim</Link>
+              <Link href="#achievements" className="transition-colors hover:text-[#3A6B62]">Bog'lanish uchun</Link>
+          
             </nav>
 
             {/* Ijtimoiy tarmoqlar */}
@@ -242,7 +238,7 @@ export default function PortfolioPage() {
                   href="#contact"
                   className="inline-flex items-center justify-center rounded-md bg-[#A4C156] px-12 py-4 text-[15px] font-medium text-white shadow-md transition-all duration-300 hover:bg-[#94B146] hover:shadow-lg active:scale-95"
                 >
-                  Make an appointment
+                 Murojaat qoldirish
                 </Link>
               </motion.div>
             </motion.div>
@@ -298,7 +294,7 @@ export default function PortfolioPage() {
               transition={{ duration: 0.7 }}
               className="text-center font-serif italic text-3xl font-normal text-slate-700 md:text-4xl"
             >
-              About me
+             Biografiya
             </motion.h2>
 
             <div className="mt-16 grid items-center gap-16 lg:grid-cols-2">
@@ -356,7 +352,7 @@ export default function PortfolioPage() {
             transition={{ duration: 0.7 }}
             className="text-center font-serif italic text-3xl font-normal text-slate-700 md:text-4xl"
           >
-            Certificates & Achievements
+           Ilmiy yutuqlar va malaka sertifikatlari
           </motion.h2>
 
           <div className="relative mt-16 overflow-hidden rounded-[2.5rem] border border-[#E5DCC9] bg-white/60 backdrop-blur-sm px-6 py-14 sm:px-12 md:py-16 lg:p-20 shadow-lg">
