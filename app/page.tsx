@@ -33,11 +33,10 @@ const siteData = {
     "Mustaqillikning 25 va 30 yilligi ko'krak nishonlari sohibasi."
   ],
   contacts: {
-    phone: "+998 90 000 00 00",
+    phone: "+998 95 507-00-39",
     location: "Samarqand shahri, SAOMED klinikasi",
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
-    telegram: "https://t.me"
+    instagram: "https://www.instagram.com/professor_xushvakova/",
+    telegram: "https://t.me/Nilufar_Xushvakova"
   }
 };
 
@@ -176,13 +175,7 @@ export default function PortfolioPage() {
               >
                 <Send className="h-4 w-4" />
               </Link>
-              <Link
-                href={siteData.contacts.facebook}
-                target="_blank"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm transition-transform hover:scale-110"
-              >
-                <Facebook className="h-4 w-4 fill-white" />
-              </Link>
+             
               <Link
                 href={siteData.contacts.instagram}
                 target="_blank"
@@ -251,35 +244,27 @@ export default function PortfolioPage() {
               className="relative order-1 lg:order-2"
             >
               {/* Blob shaklidagi rasm konteyneri */}
-              <div className="relative mx-auto w-full max-w-[560px]">
-                <svg width="0" height="0" className="absolute">
-                  <defs>
-                    <clipPath id="blobShape" clipPathUnits="objectBoundingBox">
-                      {/* Organik leaf-blob shape - chap yuqori sezilgan, o'ng pastda dumaloq */}
-                      <path d="M 0.45,0.02
-                               C 0.65,0.0 0.85,0.08 0.94,0.25
-                               C 1.0,0.42 0.99,0.62 0.95,0.78
-                               C 0.9,0.92 0.78,0.99 0.6,1.0
-                               C 0.42,1.0 0.22,0.96 0.1,0.82
-                               C 0.0,0.68 0.02,0.48 0.06,0.32
-                               C 0.12,0.15 0.25,0.04 0.45,0.02 Z" />
-                    </clipPath>
-                  </defs>
-                </svg>
+              <div className="relative w-full max-w-[600px] mx-auto bg-[#FBF3EC] p-8">
+      {/* SVG clipPath definition */}
+    
 
-                <div
-                  className="relative aspect-[4/5] w-full overflow-hidden"
-                  style={{ clipPath: 'url(#blobShape)' }}
-                >
-                  <Image
-                    src="/her.jpg"
-                    alt={siteData.doctorName}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-              </div>
+      {/* Binafsha nuqta - chap past */}
+      <div className="absolute bottom-20 left-2 w-3 h-3 rounded-full bg-purple-400" />
+
+      {/* Asosiy rasm - blob shaklida */}
+      <div
+        className="relative aspect-[4/5] w-full overflow-hidden"
+        style={{ clipPath: 'url(#blobShape)' }}
+      >
+        <Image
+          src="/her.jpg"
+          alt="Doctor"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+    </div>
             </motion.div>
           </div>
         </section>
@@ -503,13 +488,7 @@ export default function PortfolioPage() {
               >
                 <Send className="h-4 w-4" />
               </Link>
-              <Link
-                href={siteData.contacts.facebook}
-                target="_blank"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white transition-transform hover:scale-110"
-              >
-                <Facebook className="h-4 w-4 fill-white" />
-              </Link>
+             
               <Link
                 href={siteData.contacts.instagram}
                 target="_blank"
